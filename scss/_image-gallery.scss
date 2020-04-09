@@ -1,6 +1,16 @@
 /*** *****************
 Plugin Style
 **********************/
+.lg-outer .lg-thumb{
+    display: none;
+}
+.lg-outer .lg-toogle-thumb:after{
+    display: none;
+}
+.lg-sub-html h4 {
+    color: complement($color: tomato);
+}
+@media only screen and (min-width: 600px){
 .lg-sub-html h4{
     font-size: 33px;
     color: complement(tomato);
@@ -35,4 +45,11 @@ Plugin Style
 
  .lg-toolbar{
      background: none;
+ }
+ .lg-outer .lg-thumb{
+    display: block;
+}
+.lg-outer .lg-toogle-thumb:after{
+    display: block;
+}
  }

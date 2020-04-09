@@ -117,33 +117,49 @@ Header Style
 /*** *****************
 Plugin Style
 **********************/
+.lg-outer .lg-thumb {
+  display: none; }
+
+.lg-outer .lg-toogle-thumb:after {
+  display: none; }
+
 .lg-sub-html h4 {
-  font-size: 33px;
   color: #47e3ff; }
 
-.lg-sub-html p {
-  font-size: 23;
-  font-size: 1.5rem;
-  color: white; }
+@media only screen and (min-width: 600px) {
+  .lg-sub-html h4 {
+    font-size: 33px;
+    color: #47e3ff; }
 
-.lg-actions .lg-prev {
-  left: 40px; }
+  .lg-sub-html p {
+    font-size: 23;
+    font-size: 1.5rem;
+    color: white; }
 
-.lg-actions .lg-next {
-  right: 40px; }
+  .lg-actions .lg-prev {
+    left: 40px; }
 
-.lg-actions .lg-next,
-.lg-actions .lg-prev {
-  font-size: 80px; }
-  .lg-actions .lg-next:hover,
-  .lg-actions .lg-prev:hover {
-    color: tomato; }
+  .lg-actions .lg-next {
+    right: 40px; }
 
-.lg-toolbar .lg-download:after,
-.lg-toolbar .lg-close:after {
-  font-size: 50px; }
+  .lg-actions .lg-next,
+  .lg-actions .lg-prev {
+    font-size: 80px; }
+    .lg-actions .lg-next:hover,
+    .lg-actions .lg-prev:hover {
+      color: tomato; }
 
-.lg-toolbar {
-  background: none; }
+  .lg-toolbar .lg-download:after,
+  .lg-toolbar .lg-close:after {
+    font-size: 50px; }
+
+  .lg-toolbar {
+    background: none; }
+
+  .lg-outer .lg-thumb {
+    display: block; }
+
+  .lg-outer .lg-toogle-thumb:after {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
