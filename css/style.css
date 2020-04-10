@@ -117,19 +117,45 @@ Header Style
 /*** *****************
 Plugin Style
 **********************/
-.lg-outer .lg-thumb {
-  display: none; }
-
 .lg-outer .lg-toogle-thumb:after {
   display: none; }
 
 .lg-sub-html h4 {
   color: #47e3ff; }
 
+.lg-actions .lg-next, .lg-actions .lg-prev {
+  background-color: transparent; }
+
+.lg-actions .lg-next,
+.lg-actions .lg-prev {
+  font-size: 40px; }
+  .lg-actions .lg-next:hover,
+  .lg-actions .lg-prev:hover {
+    color: tomato; }
+
+.lg-toolbar .lg-download,
+.lg-autoplay-button,
+.lg-fullscreen,
+#lg-zoom-in,
+#lg-zoom-out,
+#lg-actual-size,
+.lg-outer #lg-share,
+#lg-counter {
+  display: none; }
+
+.lg-toolbar .lg-close {
+  padding-right: 50%;
+  font-size: 3rem;
+  padding-top: 2rem; }
+
 @media only screen and (min-width: 600px) {
   .lg-sub-html h4 {
     font-size: 33px;
     color: #47e3ff; }
+
+  .lg-actions .lg-next,
+  .lg-actions .lg-prev {
+    font-size: 80px; }
 
   .lg-sub-html p {
     font-size: 23;
@@ -142,24 +168,15 @@ Plugin Style
   .lg-actions .lg-next {
     right: 40px; }
 
-  .lg-actions .lg-next,
-  .lg-actions .lg-prev {
-    font-size: 80px; }
-    .lg-actions .lg-next:hover,
-    .lg-actions .lg-prev:hover {
-      color: tomato; }
-
-  .lg-toolbar .lg-download:after,
-  .lg-toolbar .lg-close:after {
-    font-size: 50px; }
-
-  .lg-toolbar {
-    background: none; }
-
-  .lg-outer .lg-thumb {
-    display: block; }
+  .lg-toolbar .lg-close {
+    font-size: 4rem;
+    padding-top: 1rem; }
 
   .lg-outer .lg-toogle-thumb:after {
-    display: block; } }
+    display: block; }
+
+  .lg-outer .lg-image {
+    max-height: 75%;
+    max-width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
